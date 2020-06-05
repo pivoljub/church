@@ -1,0 +1,39 @@
+{% extends "main.html" %}
+{% load static %}
+
+{% block content %}
+{% include "includes/header.html"%}
+   <form action="" class="row justify-content-center mb-2" method="post">
+      <fieldset class="col-4 border my-3 p-3 border-dark ">
+          <legend  class="w-auto m-0"><strong>Регистрация</strong></legend>
+          <label for="fname"><strong>Имя<span class="text-danger">*</span></strong></label>
+          <input class="form-control  m-0 mb-2 py-1" id="fname" type="text" name="fname" placeholder="ИМЯ" required>
+
+          <label for="sname"><strong>Фамилия<span class="text-danger">*</span></strong></label>
+          <input class="form-control  m-0 mb-2 py-1" id="sname" type="text" name="sname" placeholder="ФАМИЛИЯ" required>
+
+          <label for="username"><strong>Имя Пользователя<span class="text-danger">*</span></strong></label>
+          <input class="form-control  m-0 mb-2 py-1" id="username" type="text" name="username" placeholder="ИМЯ ПОЛЬЗОВАТЕЛЯ" required>
+
+          <label for="email"><strong>E-mail<span class="text-danger">*</span></strong></label>
+          <input class="form-control  m-0 mb-2 py-1" id="email" type="email" name="email" placeholder="E-MAIL" required>
+
+          <label for="phone"><strong>Номер Телефона</strong></label>
+          <input class="form-control  m-0 mb-2 py-1" id="phone" type="email" name="phone" placeholder="НОМЕР ТЕЛЕФОНА">
+
+          <label for="password"><strong>Пароль<span class="text-danger">*</span></strong></label>
+          <input class="form-control  m-0 mb-2 py-1" id="password" type="password" name="password" placeholder="ПАРОЛЬ" required>
+
+          <label for="repeatpassword"><strong>Повторите Пароль<span class="text-danger">*</span></strong></label>
+          <input class="form-control  m-0 mb-2 py-1" id="repeatpassword" type="password" name="repeatpassword" placeholder="ПОВТОРИТЕ ПАРОЛЬ" required>
+
+          <p><strong class="text-danger"> * Обязательные Поля</strong></p>
+
+          <input class="col btn btn-primary my-2  text-white" id="submit" type="submit" name="registration" value="Зарегистроваться" >
+
+          <p class="row my-2 ml-1">Уже зарегистрированы?<a href="/login" class="ml-2 ">Войдите</a></p>
+      </fieldset>
+   </form>
+{% include "includes/footer.html"%}
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "main.html" %}
+{% load static %}
+
+{% block content %}
+{% include "includes/header.html"%}
+   <form action="" class="row justify-content-center mb-2" method="post">
+      <fieldset class="col-4 border my-3 p-3 border-dark ">
+          <legend  class="w-auto m-0">Вход</legend>
+          <label for="email">E-mail</label>
+          <input class="form-control  m-0 mb-2 py-1" id="email" type="email" name="email" placeholder="E-MAIL" required>
+
+          <label for="password">Пароль</label>
+          <input class="form-control  m-0 mb-2 py-1" id="password" type="password" name="password" placeholder="ПАРОЛЬ" required>
+
+          <input style="transform: scale(1.5);margin:0 5px;" id="remember" type="checkbox" name="remember" value="false" >
+          <label>Запомнить меня</label>
+
+          <input class="col btn btn-primary my-2  text-white" id="submit" type="submit" name="login" value="Войти" >
+
+          <p class="row my-2 ml-1">Ещё нет аккаунта?<a href="/registration" class="ml-2 ">Зарегистрируйтесь</a></p>
+      </fieldset>
+   </form>
+{% include "includes/footer.html"%}
+
+{% endblock %}

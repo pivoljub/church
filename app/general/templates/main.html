@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
- <h1>Hello World</h1>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+    {% load static %}
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css"/>
+    <link href="{% static 'bootstrap/css/style.css' %}" rel="stylesheet" type="text/css"/>
+  </head>
+  <body style="background-color:#BEECA5">
+  <div class="container px-0 mt-3" style=" background-color: #ACDD74;">
+  </div>
+  <div class="container px-0 mt-3" style=" background-color: #ACDD74;">
+    {% block content %}
+    {% endblock %}
+
+
+  </div>
+  </body>
 </html>

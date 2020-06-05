@@ -1,0 +1,45 @@
+{% load static %}
+
+{% block content %}
+        <div class="row justify-content-center m-0">
+            <div class="col-sm-12 col-lg-12 px-0">
+            	<div class="row justify-content-end p-0 m-0">
+            		<strong><a href="/login" class="nav-link ">Войти</a></strong>
+            	</div>
+             	<div class="container-fluid p-0">
+            		<section class="row no-gutters align-items-center">
+                	<div class="col-12 text-center d-flex pt-0">
+                		<h1 class="w-100 position-absolute mt-5" style="color: #E5C100;text-align: center;font-family: berkshire-swash;font-style: normal;"><strong>Православная церковь в Ирландии<br> Атлон и Лимерик</strong></h1>
+                	</div>
+            		</section>
+             	</div>
+            		<img src="{% static 'images/site/3.jpg' %}" alt="Logo" width="100%" >
+        	</div>
+        </div>
+
+        <nav class="navbar navbar-expand-sm navbar-dark justify-content-center" style="background-color:#479617;">
+             <ul class="navbar-nav">
+                <li class="nav-item">
+                    <strong><a href="/home " class="nav-link ">ГЛАВНАЯ</a></strong>
+                </li>
+                <li class="nav-item">
+                    <strong><a href="/about_as " class="nav-link ">О НАС</a></strong>
+                </li>
+                 <li class="nav-item" >
+                     <strong><a href="" class="nav-link ">РАСПИСАНИЕ БОГОСЛУЖЕНИЙ</a></strong>
+                </li>
+                <li class="nav-item">
+                    <strong><a href=" " class="nav-link ">ПУБЛИКАЦИИ</a></strong>
+                </li>
+                <li class="nav-item">
+                    <strong><a href=" " class="nav-link ">СТАТЬИ</a></strong>
+                </li>
+                <li class="nav-item">
+                    <strong><a href=" " class="nav-link ">ФОТО ГАЛЕРЕЯ</a></strong>
+                </li>
+                <li class="nav-item">
+                    <strong><a href=" " class="nav-link ">СВЯЗАТЬСЯ С НАМИ</a></strong>
+                </li>
+             </ul>
+        </nav>
+{% endblock %}

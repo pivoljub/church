@@ -1,0 +1,13 @@
+{% extends "main.html" %}
+{% block title %}ГЛАНАЯ{% endblock %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+{% include "includes/header.html"%}
+    {% crispy form %}
+
+{% include "includes/footer.html"%}
+
+{% endblock %}
